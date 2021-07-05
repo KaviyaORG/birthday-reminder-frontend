@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Menu button style*/
+.menu_container{
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 200px;
+  height: 100%;
+  transition:  1000ms;
+
+}
+.menu_btn {
+  background: none;
+  border: none;
+  font-size: 35px;
+  transition:  1500ms;
+
+}
+.menu_btn:hover{
+  color: #ece5e5;
+}
+/*/////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+.menu_items{
+  position: relative;
+  top: 20%;
+  list-style: none;
+  text-align: center;
+
+}
+.menu_items li{
+  font-size: 20px;
+  padding: 10px;
+  font-family: SemplicitaPro, cursive;
+  margin: 5px 12px 10px 12px;
+  border-bottom:3px solid #ac8e2c;
+  /*border-bottom-width: thin;*/
+  transition:  1000ms;
+}
+.menu_items li:hover{
+  /*background-color: #ecb759;*/
+  /*background-color: #9e650d;*/
+  background-color: #d4af37;
+  border-radius: 10px;
+  /*border:2px solid #ffffff;*/
+  border-bottom: 7px solid #ffffff;
+  /*border-left: 8px solid #080909;*/
+  box-shadow:0 0 10px #ffffff,0 0 40px #ffffff,0 0 180px #eaeaea,0 0 250px #ffffff;
+}
+.menu_items button{
+
+  border: none;
+  background-color: rgba(255, 18, 3, 0.73);
+  border: 2px solid ghostwhite;
+  width: 150px;
+  height: 50px;
+  font-family: SemplicitaPro, cursive;
+}
+.menu_items button:hover{
+  background-color: #e7655e;
+
+  /*border-bottom: 7px solid #ffffff;*/
+}
+.account_info{
+  position: relative;
+  top: 10%;
+  text-align: center;
+}
+/*Home page style*/
+/*.middle_content{*/
+/*  position: relative;*/
+/*  top: 150px;*/
+/*  left: 30%;*/
+/*  background: rgba(84, 83, 83, 0.51);*/
+/*  width: 550px;*/
+/*  height: 150px;*/
+/*  border-radius: 20px;*/
+/*  border:solid #211d24;*/
+/*  transition:  500ms;*/
+/*}*/
+/*.middle_content:hover{*/
+/*  background-color: #8ed9d9;*/
+/*  border-radius: 60px;*/
+/*}*/
+/*.middle_content .name{*/
+/*  position: absolute;*/
+/*  top: 35%;*/
+/*  left: 40%;*/
+/*  font-family: cursive;*/
+/*  color: #080909;*/
+/*}*/
+/*.middle_content .btn{*/
+/*  position: absolute;*/
+/*  top: 35%;*/
+/*  left: 80%;*/
+/*  background: #d55b45;*/
+/*  background: rgba(114, 220, 208, 0.51);*/
+/*  width: 100px;*/
+/*  height: 50px;*/
+/*  font-size: 20px;*/
+/*  border-radius: 15%;*/
+/*  border: none;*/
+/*  box-shadow:0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc;*/
+/*  !*border:solid #211d24;*!*/
+/*  transition:  500ms;*/
+/*  font-family: monospace;*/
+/*  font-weight: bold;*/
+
+/*}*/
+/*.middle_content .btn:hover{*/
+/*  background-color: #45ef07;*/
+/*  border-radius: 50%;*/
+/*}*/
+/*//////////////////////////////////////////////////////////////////////////////!*!/////////////////////////////////////////////////////////////////////////////!*!/////////////////////////////////////////////////////////////////////////////!*!*img{*!*/
+/*  !*width: 35mm;*!*/
+/*  !*height: 35mm;*!*/
+/*  width: 25mm;*/
+/*  height: 25mm;*/
+/*  border-radius: 50%;*/
+/*  margin: 10px 10px 10px 10px;*/
+/*  border:solid #1dd1e8;*/
+/*  border:solid #79585f;*/
+/*  box-shadow:0 0 10px #2932de,0 0 40px #7023bd,0 0 80px #faf8fc,0 0 150px #fbfdfd;*/
+
+/*}*/
+
+/*.notification_topic{*/
+/*  position: absolute;*/
+/*  top:50px;*/
+/*  left: 40%;*/
+/*  font-family: FreeMono, monospace;*/
+/*}*/
+/*///////////////////////////////////////////////////!**/

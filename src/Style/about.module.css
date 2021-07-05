@@ -1,0 +1,61 @@
+.github_logo{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 50px;
+    transition: color 500ms;
+}
+.github_logo:hover{
+    color: #807e7e;
+}
+.linkendin_logo{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 50px;
+    transition: color 500ms;
+}
+.linkendin_logo:hover{
+    color: #3b5998;
+}
+.mainTopic{
+    font-size: 40px;
+    /*font-family: "Britannic Bold";*/
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.firstName{
+    font-family: Gill Sans, sans-serif;
+    /*border:3px solid #e33131;*/
+    color: white;
+}
+.secondTopic{
+    margin-top: 20px;
+    font-family: Gill Sans, sans-serif;
+}
+.paragraph{
+    margin-top: 20px;
+    font-family: Times, Times New Roman, serif;
+}
+.proPic{
+    border-top-left-radius: 80px;
+    /*border-bottom-left-radius: 50px;*/
+    border:2px solid #ffffff;
+    box-shadow: 6px 6px 5px gray;
+    transition: box-shadow 1s;
+
+}
+.proPic:hover {
+     box-shadow: 0px 0px 0px gray;
+ }
+.main_container{
+    border-bottom-right-radius: 50px;
+    box-shadow: 6px 6px 5px gray;
+}
+.hrLine{
+    margin-top: 20px;
+    border-style: none;
+    height: 6px;
+    background-color: white;
+    box-shadow: 0 0 10px #131313,0 0 40px #555252,0 0 80px #766f79,0 0 150px #ffffff;
+
+}
