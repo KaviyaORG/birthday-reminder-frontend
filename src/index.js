@@ -25,8 +25,8 @@ ReactDOM.render(
             <Route exact path="/" component={SignIn}/>
             <Route path="/signUp" component={SignUp}/>
             <Route path="/findPassword" component={FindPassword}/>
-            <ProtectedRoute path="/updatePassword" component={UpdatePassword}/>
-            {/*<Route path="/updatePassword" component={UpdatePassword}/>*/}
+            {/*<ProtectedRoute path="/updatePassword" component={UpdatePassword}/>*/}
+            <Route path="/updatePassword" component={UpdatePassword}/>
 
             <ProtectedRoute path="/home" component={ Home  } />
             <ProtectedRoute path="/addData" component={AddData}/>

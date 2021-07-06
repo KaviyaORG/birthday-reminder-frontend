@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import Styles from "../Style/about.module.css";
+import {Link} from "react-router-dom";
 
 
 const About=()=> {
@@ -94,8 +95,10 @@ const About=()=> {
 
                     <div className="my_social_media_link" style={socialMediaLink}>
 
-                                <FontAwesomeIcon className={Styles.github_logo} icon={faGithub}/>
-                                <FontAwesomeIcon className={Styles.linkendin_logo} icon={faLinkedin}/>
+                        <a className={Styles.link} href="https://github.com/KaViShKa99"><FontAwesomeIcon className={Styles.github_logo} icon={faGithub} /></a>
+                        <a className={Styles.link} href="https://www.linkedin.com/in/kavishka-ganewattha-1813661a6/"> <FontAwesomeIcon className={Styles.linkendin_logo} icon={faLinkedin} /></a>
+
+
                     </div>
             </div>
         </div>

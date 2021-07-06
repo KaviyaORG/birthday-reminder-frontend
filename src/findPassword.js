@@ -17,7 +17,8 @@ const Find_password=()=>{
         top:"28%",
         left:"35%",
         right:"30%",
-        background: "rgb(246,176,155)",
+        // background: "rgb(246,176,155)",
+        background: "rgba(185,188,189,0.84)",
         boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         // borderRadius:"5px",
         // borderBottomLeftRadius: "30px",
@@ -40,7 +41,8 @@ const Find_password=()=>{
     }
 
     // const Url ="http://localhost:8000/getPassword";
-    const Url =`${configData.SERVER_URL}/getPassword`;
+    // const Url =`${configData.SERVER_URL}/getPassword`;
+    const Url =configData.SERVER_URL+"/getPassword";
 
     const[formData,setFormData]=useState({
         email:''

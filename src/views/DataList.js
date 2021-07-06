@@ -70,14 +70,14 @@ function StickyHeadTable({data}) {
                                     setState({ ...state, data });
                                 }, 600);
 
-                                axios.delete(`${configData.SERVER_URL}/addUserData/delete/${oldData.id}?path=${oldData.imageName}&user=${emailDecode()}`)
+                                axios.delete(configData.SERVER_URL+`/addUserData/delete/${oldData.id}?path=${oldData.imageName}&user=${emailDecode()}`)
                                     .then(response=>{
                                         toast.success("Delete successfully")
-                                        setTimeout(() => window.location.reload(), 3000);
+                                        setTimeout(() => window.location.reload(), 500);
                                     })
                                     .catch(err=>{
                                         toast.error("try again...")
-                                        setTimeout(() => window.location.reload(), 3000);
+                                        setTimeout(() => window.location.reload(), 500);
                                     })
 
                                 // window.location.reload(false);

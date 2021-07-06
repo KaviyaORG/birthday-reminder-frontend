@@ -31,11 +31,7 @@ const App=()=>{
         setHide("none")
         setbgColor("")
     }
-    // const linkStyle = {
-    //     margin: "1rem",
-    //     textDecoration: "none",
-    //     color: 'black',
-    // }
+
     const linkStyle = {
         margin: "1rem",
         fontSize:"1em",
@@ -70,9 +66,6 @@ const App=()=>{
                         <li><Link to='/home' style={linkStyle}>Home</Link></li>
                         <li><Link to='/addData' style={linkStyle}>AddBirthday</Link></li>
                         <li><Link to='/about' style={linkStyle}>About</Link></li>
-                        {/*<li><Link to='/signUp' style={linkStyle}>Sign Up</Link></li>*/}
-                        {/*<li><Link to='/' style={linkStyle} onClick={SignOut()} >Log out</Link></li>*/}
-                        <li><Link to='/' style={linkStyle}>Login</Link></li>
                         <button style={linkStyle} onClick={SignOut} >Log out </button>
 
                 </ul>

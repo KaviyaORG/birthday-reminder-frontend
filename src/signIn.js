@@ -19,7 +19,9 @@ const SignIn=()=>{
         top:"28%",
         left:"35%",
         right:"30%",
-        background: "rgb(187,155,246)",
+        // background: "rgb(187,155,246)",
+        background: "rgba(185,188,189,0.84)",
+        // background: "rgb(143,229,147)",
         boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         borderRadius:"5px",
         width:"30%",
@@ -38,7 +40,7 @@ const SignIn=()=>{
         // window.location.reload(false)
     }
 
-    const Url =`${configData.SERVER_URL}/signIn`;
+    const Url =configData.SERVER_URL+"/signIn";
 
 
     const[formData,setFormData]=useState({

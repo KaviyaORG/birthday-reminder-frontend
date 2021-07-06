@@ -17,7 +17,7 @@ const BirthdayForm=()=>{
     }
 
     // const url ="http://localhost:8000/addUserData";
-    const url =`${configData.SERVER_URL}/addUserData`;
+    const url =configData.SERVER_URL+"/addUserData";
     const [ Image , setImage] =useState(null);
 
     const [ Data, setData] =useState({

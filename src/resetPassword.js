@@ -46,7 +46,7 @@ const ResetPassword=()=>{
     }
 
     // const Url ="http://localhost:8000/updatePassword";
-    const Url =`${configData.SERVER_URL}/updatePassword`;
+    const Url =configData.SERVER_URL+"/updatePassword";
 
     const[formData,setFormData]=useState({
         email:'',

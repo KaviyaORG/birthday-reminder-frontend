@@ -25,7 +25,8 @@ const SignUp=()=>{
         top:"28%",
         left:"35%",
         right:"30%",
-        background: "rgb(155,194,246)",
+        // background: "rgb(155,194,246)",
+        background: "rgba(185,188,189,0.84)",
         boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         borderRadius:"5px",
         width:"30%",
@@ -39,7 +40,7 @@ const SignUp=()=>{
     }
 
     // const Url ="http://localhost:8000/signUp";
-    const Url =`${configData.SERVER_URL}/signUp`;
+    const Url =configData.SERVER_URL+"/signUp";
 
     const[formData,setFormData]=useState({
         username:'',

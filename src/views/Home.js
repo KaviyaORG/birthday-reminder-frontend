@@ -30,7 +30,7 @@ const Home=()=>{
     //         );
     //
     // },[]);
-    const Url =`${configData.SERVER_URL}/home`;
+    const Url =configData.SERVER_URL+"/home";
 
     useEffect(() => {
         const AuthStr = 'Bearer '.concat(localStorage.getItem('user'));

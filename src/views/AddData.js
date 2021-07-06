@@ -41,7 +41,7 @@ const AddData=()=>{
 
     };
     const [db,setDb] =useState(null);
-    const Url =`${configData.SERVER_URL}/addUserData`;
+    const Url =configData.SERVER_URL+"/addUserData";
 
     useEffect(() => {
         const AuthStr = 'Bearer '.concat(localStorage.getItem('user'));
