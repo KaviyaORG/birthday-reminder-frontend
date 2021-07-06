@@ -54,6 +54,7 @@
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "react-router-dom": "^5.2.0",
-    "react-toastify": "^7.0.4"
+    "react-toastify": "^7.0.4",
+    "react-scripts": "4.0.3"
   }
 }
