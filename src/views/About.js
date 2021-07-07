@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import Styles from "../Style/about.module.css";
-import {Link} from "react-router-dom";
 
 
 const About=()=> {
@@ -16,14 +15,10 @@ const About=()=> {
         top:"25%",
         left:"23%",
         right:"30%",
-        // background: "rgba(145,179,229,0.51)",
-        // background: "rgba(170,199,238,0.51)",
-        // backgroundColor:"#6495ED",
         boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 100px #ffffff,0 0 250px #fffcfc",
-        // borderRadius:"5px",
         width:"50%",
         height:"60%",
-        // border:"2px solid black"
+
     }
     const mainBg={
         width: w,
@@ -34,28 +29,17 @@ const About=()=> {
         position:"absolute",
         top:"-10%",
         left:"-10%",
-        // right:"30%",
-        // background: "rgba(145,179,229,0.51)",
         background: "rgba(231,170,238,0.51)",
-        // backgroundColor:"#6495ED",
         backgroundImage: `url(${Propic})`,
         backgroundSize:"cover",
-        // boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
-        // borderRadius:"5px",
         width:"40%",
         height:"75%",
-        // border:"2px solid black"
+
     }
 
     const my_details={
         position:"absolute",
-        // top:"25%",
         left:"40%",
-        // right:"30%",
-        // background: "rgba(145,179,229,0.51)",
-        // background: "rgba(231,170,238,0.51)",
-        // backgroundColor:"#6495ED",
-        // boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         borderRadius:"5px",
         width:"50%",
         height:"60%"
@@ -65,11 +49,6 @@ const About=()=> {
         position:"absolute",
         top:"65%",
         left:"0%",
-        // right:"30%",
-        // background: "rgba(145,179,229,0.51)",
-        // background: "rgba(231,170,238,0.51)",
-        // backgroundColor:"#6495ED",
-        // boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         borderRadius:"5px",
         width:"100%",
         height:"30%"

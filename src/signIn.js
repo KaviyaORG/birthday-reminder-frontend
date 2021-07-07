@@ -2,11 +2,10 @@ import React, {useState} from "react";
 import configData from "./config.json";
 import {Switch,Route,Link ,useHistory} from "react-router-dom";
 import Styles from "./Style/signPage.module.css";
-import SignUp from './signUp'
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
 import {authenticate,isAuth} from "./helpers/auth";
-import loginBckground from "./Photo/login.jpg";
+
 
 
 const SignIn=()=>{
@@ -19,9 +18,7 @@ const SignIn=()=>{
         top:"28%",
         left:"35%",
         right:"30%",
-        // background: "rgb(187,155,246)",
         background: "rgba(185,188,189,0.84)",
-        // background: "rgb(143,229,147)",
         boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         borderRadius:"5px",
         width:"30%",
@@ -31,13 +28,11 @@ const SignIn=()=>{
         width: w,
         height: h,
         backgroundSize:"cover",
-        // backgroundImage: `url(${loginBckground})`
         backgroundColor:"#e2e3e2",
 
     }
     const loadingSignUpPage=()=>{
         history.push("/signUp")
-        // window.location.reload(false)
     }
 
     const Url =configData.SERVER_URL+"/signIn";
@@ -53,7 +48,6 @@ const SignIn=()=>{
         const addData ={...formData}
         addData[e.target.id]=e.target.value;
         setFormData(addData)
-        console.log(e.target.value)
 
     }
     const Submit=(e)=>{

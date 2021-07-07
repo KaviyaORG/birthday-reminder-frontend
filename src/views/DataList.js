@@ -22,9 +22,6 @@ function StickyHeadTable({data}) {
         }
     }
 
-    // const columns = data[0] && Object.keys(data[0]);
-    // console.log(columnS)
-
     const [state, setState] = useState({
 
 
@@ -79,8 +76,6 @@ function StickyHeadTable({data}) {
                                         toast.error("try again...")
                                         setTimeout(() => window.location.reload(), 500);
                                     })
-
-                                // window.location.reload(false);
 
 
                             }),

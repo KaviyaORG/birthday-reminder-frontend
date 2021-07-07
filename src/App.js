@@ -1,9 +1,6 @@
 import React, {useState} from 'react';
 import {Route, Switch, Link, useRouteMatch, useHistory} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Home from './views/Home'
-import AddData from './views/AddData'
-import About from './views/About'
 import {signout} from "./helpers/auth";
 import jwt from "jwt-decode";
 
@@ -44,7 +41,7 @@ const App=()=>{
     const SignOut =()=>{
         signout()
         history.push("/")
-        // window.location.reload(false)
+
     }
     const userName =()=>{
         const  token =localStorage.getItem('user');

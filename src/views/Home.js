@@ -9,8 +9,6 @@ const Home=()=>{
     const h = window.innerHeight;
 
     const sectionStyle = {
-        // backgroundRepeat:"no-repeat",
-        // backgroundPosition:"center",
         backgroundSize:"cover",
         width: w,
         height:h,
@@ -19,17 +17,6 @@ const Home=()=>{
 
 /////////////////////////////////////////////////////////////////////////////
     const [data,setData] =useState(null);
-
-    // useEffect(()=>{
-    //     fetch('http://localhost:8000/home')
-    //         .then(res=>
-    //         {return res.json()
-    //         })
-    //         .then(d=>
-    //             {setData(d)}
-    //         );
-    //
-    // },[]);
     const Url =configData.SERVER_URL+"/home";
 
     useEffect(() => {

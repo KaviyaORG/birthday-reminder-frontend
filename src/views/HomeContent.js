@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-// import {dataBase} from '../Data/DataSet'
 import styles from '../Style/homecontent.module.css';
 
 const Content=( {people ,remove})=>{

@@ -1,15 +1,13 @@
 import React, {useState} from "react";
 import {Switch,Route,Link ,useHistory} from "react-router-dom";
 import Styles from "./Style/signPage.module.css";
-import SignUp from './signUp'
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
 import { isAuth, signout} from "./helpers/auth";
-import loginBckground from "./Photo/login.jpg";
 import configData from "./config.json";
 
 
-const ResetPassword=()=>{
+const ResetPassword=({match})=>{
     const w = window.innerWidth;
     const h = window.innerHeight;
     let history=useHistory();
@@ -45,12 +43,12 @@ const ResetPassword=()=>{
         history.push("/home")
     }
 
-    // const Url ="http://localhost:8000/updatePassword";
     const Url =configData.SERVER_URL+"/updatePassword";
 
     const[formData,setFormData]=useState({
         email:'',
         password:'',
+        token:''
     })
     const SignOut =()=>{
         signout()
@@ -62,7 +60,6 @@ const ResetPassword=()=>{
         const addData ={...formData}
         addData[e.target.id]=e.target.value;
         setFormData(addData)
-        console.log(e.target.value)
 
     }
 
@@ -71,12 +68,20 @@ const ResetPassword=()=>{
             e.preventDefault();
         }
     }
+    useEffect(()=>{
+
+        let token =match.params.token
+        if (token){
+            setFormData({...formData,token})
+        }
+    },[])
     const Submit=(e)=>{
         e.preventDefault();
 
         axios.put(Url,{
             email:formData.email,
-            password:formData.password
+            password:formData.password,
+            token:formData.token
         })
             .then(response=>{
                     setFormData({
@@ -84,14 +89,14 @@ const ResetPassword=()=>{
                         password:'',
                     })
                 toast.success(response.data)
-                isAuth() ? SignOut():history.push('/signUp')
+                setTimeout(() => isAuth() ? SignOut():history.push('/signUp'), 3000);
             })
             .catch(err=>{
                 setFormData({
                     email:'',
                     password:'',
                 })
-                toast.error(err.response.data)})
+                toast.error(err.response.data)});
     }
 
     return(

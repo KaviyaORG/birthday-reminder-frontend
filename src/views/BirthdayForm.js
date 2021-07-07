@@ -9,14 +9,12 @@ import configData from "../config.json";
 
 const BirthdayForm=()=>{
 
-    let history=useHistory();
     const emailDecode =()=>{
         const  token =localStorage.getItem('user');
         const array = jwt(token);
         return array.user.email;
     }
 
-    // const url ="http://localhost:8000/addUserData";
     const url =configData.SERVER_URL+"/addUserData";
     const [ Image , setImage] =useState(null);
 
@@ -39,10 +37,6 @@ const BirthdayForm=()=>{
         setImage(e.target.files[0])
     }
 
-    const loadingSignUpPage=()=>{
-        history.push("/addData")
-
-    }
     const Submit =(e)=> {
         e.preventDefault()
         const formData = new FormData();
@@ -60,30 +54,15 @@ const BirthdayForm=()=>{
         }
 
         axios.post(url, formData, config)
-        // axios.post(url, formData)
             .then(result => {
 
-                // setData({
-                //     name:'',
-                //     date:'',
-                // })
-                // setImage(null)
-                // // alert(" successfully"+res)
-                // console.log(result)
                 toast.success(result.data)
-                // window.location.reload(false);
                 setTimeout(() => window.location.reload(), 3000);
             })
             .catch(err=> {
-                // setData({
-                //     name:'',
-                //     date:'',
-                // })
-                // console.log(err.response)
-                // setImage(null)
-                // alert(err.response.data)
+
                 toast.error(err.response.data)
-                // window.location.reload(false);
+
                 setTimeout(() => window.location.reload(), 3000);
                 })
 

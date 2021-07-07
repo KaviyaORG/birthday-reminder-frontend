@@ -25,7 +25,6 @@ const SignUp=()=>{
         top:"28%",
         left:"35%",
         right:"30%",
-        // background: "rgb(155,194,246)",
         background: "rgba(185,188,189,0.84)",
         boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         borderRadius:"5px",
@@ -39,7 +38,6 @@ const SignUp=()=>{
         backgroundColor:"#e2e3e2",
     }
 
-    // const Url ="http://localhost:8000/signUp";
     const Url =configData.SERVER_URL+"/signUp";
 
     const[formData,setFormData]=useState({
@@ -101,11 +99,9 @@ const SignUp=()=>{
                     </div>
                     <form className={Styles.signInContainer} onSubmit={e=>Submit(e)}>
 
-                        {/*<h1>Create your account</h1>*/}
                         <input placeholder="userName" id="username" value={formData.username} onChange={e=>{Handle(e)}} onKeyDown={e=>{handleSpace(e)}}/><br/>
                         <input placeholder="email" id="email" value={formData.email} onChange={e=>{Handle(e)}} onKeyDown={e=>{handleSpace(e)}}/><br/>
                         <input type="password" placeholder="password " id="password" value={formData.password} onChange={e=>{Handle(e)}} onKeyDown={e=>{handleSpace(e)}}/><br/>
-
                         <button type="submit" onSubmit={e=>{Submit(e)}}>Submitted </button>
 
                     </form>
