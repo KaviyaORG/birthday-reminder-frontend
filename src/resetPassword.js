@@ -97,6 +97,7 @@ const ResetPassword=({match})=>{
                     password:'',
                 })
                 toast.error(err.response.data)});
+                setTimeout(() => window.location.reload(), 1000);
     }
 
     return(
