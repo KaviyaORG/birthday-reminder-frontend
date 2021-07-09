@@ -65,7 +65,7 @@ const Find_password=()=>{
 
             .catch(err=>{
                 setFormData({email:''})
-                toast.error(err.response.data.err)
+                toast.error(err.response.data)
 
             })
 

@@ -10,16 +10,15 @@ import configData from "./config.json";
 const ResetPassword=({match})=>{
     const w = window.innerWidth;
     const h = window.innerHeight;
-    let history=useHistory();
+
+    let history = useHistory();
 
     const form_Position={
         position:"absolute",
         top:"28%",
         left:"35%",
         right:"30%",
-        // background: "rgba(145,179,229,0.51)",
         background: "rgb(143,229,147)",
-        // backgroundColor:"#6495ED",
         boxShadow:"0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 150px #fffcfc",
         borderRadius:"5px",
         width:"30%",
@@ -29,18 +28,8 @@ const ResetPassword=({match})=>{
         width: w,
         height: h,
         backgroundSize:"cover",
-        // backgroundImage: `url(${loginBckground})`
         backgroundColor:"#e2e3e2",
 
-    }
-
-    const loadingSignUpPage=()=>{
-        history.push("/signUp")
-        // window.location.reload(false)
-    }
-
-    const loadingHomePage=()=>{
-        history.push("/home")
     }
 
     const Url =configData.SERVER_URL+"/updatePassword";
@@ -68,6 +57,7 @@ const ResetPassword=({match})=>{
             e.preventDefault();
         }
     }
+
     useEffect(()=>{
 
         let token =match.params.token
@@ -75,6 +65,7 @@ const ResetPassword=({match})=>{
             setFormData({...formData,token})
         }
     },[])
+
     const Submit=(e)=>{
         e.preventDefault();
 
@@ -96,8 +87,9 @@ const ResetPassword=({match})=>{
                     email:'',
                     password:'',
                 })
-                toast.error(err.response.data)});
+                toast.error(err.response.data)
                 setTimeout(() => window.location.reload(), 1000);
+            })
     }
 
     return(
