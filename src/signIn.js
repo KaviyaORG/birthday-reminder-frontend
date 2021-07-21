@@ -98,7 +98,7 @@ const SignIn=()=>{
                    <h5>or sign-in with e-mail</h5>
                    <input placeholder="email" id="email" value={formData.email} onChange={e=>{Handle(e)}} onKeyDown={e=>{handleSpace(e)}}/><br/>
                    <input type="password" placeholder="password" id="password" value={formData.password} onChange={e=>{Handle(e)}} onKeyDown={e=>{handleSpace(e)}}/><br/>
-                   <h6> <Link to="/findPassword">Forgot password </Link></h6>
+//                    <h6> <Link to="/findPassword">Forgot password </Link></h6>
                    <button type="submit">Sign-in </button>
                </form>
            </div>
